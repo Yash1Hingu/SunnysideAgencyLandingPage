@@ -4,6 +4,51 @@
     box-sizing: border-box;
 }
 body{
-    min-width: 100vw;
     font-family: 'Barlow',sans-serif;
+}
+header{
+    height: 100vh;
+    position: relative;
+    background-image: url(images/desktop/image-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+nav{
+    padding: 30px;
+}
+.drop{
+    display: flex;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+}
+#hamburger{
+    display: none;
+}
+.dropContainer{
+    margin-left: auto;
+}
+.dropContainer > a{
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.dropContainer > a:hover{
+    background-color: hsla(0, 0%, 100%, 0.196);
+}
+.absoluteContent h1{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Fraunces',sans-serif;
+    margin-top: 50px;
+    font-weight: 900;
+    letter-spacing: 8px;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.absoluteContent img{
+    margin-top: 20vh;
 }
