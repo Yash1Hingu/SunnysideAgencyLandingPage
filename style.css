@@ -1,12 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: 'Barlow',sans-serif;
+
+body {
+    font-family: 'Barlow', sans-serif;
 }
-header{
+
+header {
     height: 100vh;
     position: relative;
     background-image: url(images/desktop/image-header.jpg);
@@ -15,21 +17,26 @@ header{
     background-size: cover;
     text-align: center;
 }
-nav{
+
+nav {
     padding: 30px;
 }
-.drop{
+
+.drop {
     display: flex;
     align-items: center;
     color: hsl(0, 0%, 100%);
 }
-#hamburger{
+
+#hamburger {
     display: none;
 }
-.dropContainer{
+
+.dropContainer {
     margin-left: auto;
 }
-.dropContainer > a{
+
+.dropContainer>a {
     color: hsl(0, 0%, 100%);
     text-decoration: none;
     margin-right: 5px;
@@ -37,56 +44,74 @@ nav{
     padding: 10px 20px;
     border-radius: 20px;
 }
-.dropContainer > a:hover{
+
+.dropContainer>a:hover {
     background-color: hsla(0, 0%, 100%, 0.196);
 }
-.absoluteContent h1{
+
+.absoluteContent h1 {
     color: hsl(0, 0%, 100%);
-    font-family: 'Fraunces',sans-serif;
+    font-family: 'Fraunces', sans-serif;
     margin-top: 50px;
     font-weight: 900;
     letter-spacing: 8px;
     font-size: 3rem;
     text-transform: uppercase;
+    padding: 0 20px;
 }
-.absoluteContent img{
+
+.absoluteContent img {
     margin-top: 60px;
 }
-.introGrid{
+
+.introGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.introGrid img{
+
+.introGrid img {
     width: 100%;
 }
-.introGrid .content{
+.introGrid #gridimg1{
+    grid-row: 1;
+    grid-column: 2/-1;
+}
+.introGrid #content1{
+    grid-column: 1/2;
+}
+
+.introGrid .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 70px;
     position: relative;
 }
-.content h2{
-    font-family: 'Fraunces',sans-serif;
+
+.content h2 {
+    font-family: 'Fraunces', sans-serif;
     font-weight: 800;
     font-size: 3rem;
     margin-bottom: 20px;
 }
-.content p{
+
+.content p {
     color: hsl(213, 9%, 39%);
     line-height: 1.5;
     margin-bottom: 20px;
 }
-.content a{
+
+.content a {
     width: fit-content;
     position: relative;
-    font-family: 'Fraunces',sans-serif;
+    font-family: 'Fraunces', sans-serif;
     color: hsl(0, 0%, 0%);
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 900;
 }
-.content a::after{
+
+.content a::after {
     content: "";
     position: absolute;
     right: 0;
@@ -97,16 +122,20 @@ nav{
     border-radius: 10px;
     background-color: hsla(51, 100%, 49%, 0.488);
 }
-#contentLink2::after{
+
+#contentLink2::after {
     background-color: hsla(7, 99%, 70%, 0.486);
 }
-#contentLink1:hover::after{
+
+#contentLink1:hover::after {
     background-color: hsl(51, 100%, 49%);
 }
-#contentLink2:hover::after{
+
+#contentLink2:hover::after {
     background-color: hsl(7, 99%, 70%);
 }
-.innerContent{
+
+.innerContent {
     width: 50vw;
     height: 70vh;
     background-position: center;
@@ -119,72 +148,180 @@ nav{
     text-align: center;
     padding: 0 130px 50px;
 }
-#inner1{
+
+#inner1 {
     background-image: url(images/desktop/image-graphic-design.jpg);
     color: hsl(167, 40%, 24%);
 }
-#inner2{
+
+#inner2 {
     background-image: url(images/desktop/image-photography.jpg);
     color: hsl(198, 62%, 26%);
 }
-.innerContent h2{
-    font-family: 'Fraunces',sans-serif;
+
+.innerContent h2 {
+    font-family: 'Fraunces', sans-serif;
     margin-bottom: 30px;
     font-weight: 800;
 }
-#testimonials{
+
+#testimonials {
     text-align: center;
     padding: 9% 7%;
     color: hsl(213, 9%, 39%);
 }
-#testimonials article{
+
+#testimonials article {
     display: flex;
     margin-top: 30px;
 }
-#testimonials h2{
-    font-family: 'Fraunces',sans-serif;
+
+#testimonials h2 {
+    font-family: 'Fraunces', sans-serif;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
-.testimonialBox img{
+
+.testimonialBox img {
     width: 100px;
     border-radius: 50%;
     margin-bottom: 50px;
 }
-.testimonialBox p{
+
+.testimonialBox p {
     padding: 0 20px;
     margin-bottom: 50px;
 }
-.testimonialBox h4{
-    font-family: 'Fraunces',sans-serif;
+
+.testimonialBox h4 {
+    font-family: 'Fraunces', sans-serif;
     color: hsl(0, 0%, 0%);
     margin-bottom: 10px;
 }
-.perviewImages{
+
+.perviewImages {
     display: flex;
 }
-.perviewImages img{
+
+.perviewImages img {
     width: 25vw
 }
-footer{
+
+footer {
     background-color: hsl(168, 34%, 41%);
     padding: 5%;
     text-align: center;
 }
-footer img{
+
+footer img {
     margin-bottom: 20px;
 }
-.pages{
+
+.pages {
     margin-bottom: 50px;
 }
-.pages >a {
+
+.pages>a {
     color: hsl(167, 40%, 24%);
     text-decoration: none;
     margin: 0 10px;
 }
-.socialMedia > img{
+
+.socialMedia>img {
     margin: 0 10px;
 }
-.pages > a:hover,.socialMedia > img:hover{
+
+.pages>a:hover,
+.socialMedia>img:hover {
     color: hsl(0, 0%, 100%);
+}
+
+@media screen and (max-width:520px) {
+    .drop {
+        display: block;
+        position: relative;
+        text-align: left;
+    }
+
+    #hamburger {
+        display: inline;
+        position: absolute;
+        right: 0;
+        padding: 0 5px;
+    }
+
+    .dropContainer {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        background-color: hsl(0, 0%, 100%);
+        margin-top: 50px;
+        width: 100%;
+        text-align: center;
+        transition: all 1s ease-in-out;
+    }
+
+    .drop:hover .dropContainer {
+        display: flex;
+        animation: hover 0.8s ease-in-out;
+    }
+    @keyframes hover {
+        0% {
+            opacity: 0;
+            transform: scale(0.9);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    .dropContainer::before {
+        content: "";
+        position: absolute;
+        top: -28px;
+        right: 0;
+        border-style: solid;
+        border-width: 30px 30px 0 30px;
+        border-color: transparent hsl(0, 0%, 100%) transparent transparent;
+    }
+
+    .dropContainer>a {
+        width: fit-content;
+        margin: 15px;
+        color: hsl(213, 9%, 39%);
+        font-weight: 800;
+    }
+
+    .dropContainer a:last-child {
+        font-family: 'Fraunces', sans-serif;
+        color: hsl(0, 0%, 0%);
+        background-color: hsl(51, 100%, 49%);
+    }
+
+    .introGrid{
+        display: block;
+    }
+    .introGrid .content{
+        align-items: center;
+        padding: 70px;
+    }
+    .innerContent{
+        width: 100%;
+        padding: 0 30px 30px;
+    }
+    #testimonials article{
+        display: block;
+    }
+    .testimonialBox{
+        margin-bottom: 100px;
+    }
+    .perviewImages{
+        flex-wrap: wrap;
+    }
+    .perviewImages img {
+        width: 50vw
+    }
 }
