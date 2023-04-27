@@ -132,3 +132,59 @@ nav{
     margin-bottom: 30px;
     font-weight: 800;
 }
+#testimonials{
+    text-align: center;
+    padding: 9% 7%;
+    color: hsl(213, 9%, 39%);
+}
+#testimonials article{
+    display: flex;
+    margin-top: 30px;
+}
+#testimonials h2{
+    font-family: 'Fraunces',sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.testimonialBox img{
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+.testimonialBox p{
+    padding: 0 20px;
+    margin-bottom: 50px;
+}
+.testimonialBox h4{
+    font-family: 'Fraunces',sans-serif;
+    color: hsl(0, 0%, 0%);
+    margin-bottom: 10px;
+}
+.perviewImages{
+    display: flex;
+}
+.perviewImages img{
+    width: 25vw
+}
+footer{
+    background-color: hsl(168, 34%, 41%);
+    padding: 5%;
+    text-align: center;
+}
+footer img{
+    margin-bottom: 20px;
+}
+.pages{
+    margin-bottom: 50px;
+}
+.pages >a {
+    color: hsl(167, 40%, 24%);
+    text-decoration: none;
+    margin: 0 10px;
+}
+.socialMedia > img{
+    margin: 0 10px;
+}
+.pages > a:hover,.socialMedia > img:hover{
+    color: hsl(0, 0%, 100%);
+}
